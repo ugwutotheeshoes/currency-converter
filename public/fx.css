@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2f2fa2;
+    color: #fff;
+}
+
+body, header{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #2f2fa2;
+    padding: 0px 25px 0px 25px;
+}
+
+.h-container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.coins i{
+    color: #fa2f33;
+    font-size: 3.1rem;
+    padding: 1rem;
+}
+
+.flex-start{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-con{
+    color: #fa2f33;
+    display: flex;
+    
+}
+
+.details{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 5%;
+}
+
+.details h1{
+    position: relative;
+    top: 15%;
+    font-weight: 500;
+}
+
+.details h3{
+    position: absolute;
+    top: 50%;
+    font-weight: 300;
+    padding-top: 0.1rem;
+}
+
+.log-out{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.btn.transparent, .btn.solid{
+    width: 120px;
+    height: 40px;
+    border: 2px solid #fa2f33;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: #080854;
+    color: #fa2f33;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: .7s;
+     font-family: 'Poppins', sans-serif;
+}
+
+.btn.transparent:hover, .ex:hover{
+    background-color: #fa2f33;
+    color: #2f2fa2;
+}
+
+#sign-out-btn{
+    display: none;
+}
+
+.container{
+   position: relative;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 0;
+    display: block;
+}
+
+.form-con{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   position: relative;
+}
+
+.hide{
+    display: none !important;
+}
+
+.log-out span{
+    color: #fa2f33;
+    font-size: 15px;
+    position: relative;
+    top: 20px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    overflow: hidden;
+    
+}
+
+.title{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.input-field{
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 55px 0 0 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 .4rem;
+}
+
+
+.input-field i{
+    text-align: center;
+    line-height: 55px;
+    color: #080854;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+.input-field input{
+    background: #fff;
+    border-radius: 0 0px 0px 0;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #2f2fa2;
+}
+
+
+
+.input-field input::placeholder{
+    color: #080854;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.btn{
+     width: 150px;
+    height: 49px;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: #080854;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.image{
+    width: 60%;
+    margin: 20px auto;
+}
+
+#convert-container{
+    display: none;
+}
+
+.convert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5%;
+}
+
+.convert h2{
+    margin: 0.4rem;
+    color: #fff;
+}
+
+.convert i{
+    color: #fff;
+    font-size: 30px;
+}
+
+.currency-container{
+     display: table;
+     justify-content: space-around;
+     text-align: center;
+}
+
+
+
+.euro input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #2f2fa2;
+     font-family: 'Poppins', sans-serif;
+     width: 300px;
+     border-radius: 55px 0  0 55px;
+     padding-left: 20px;
+}
+
+.euro i{
+    align-items: center;
+    line-height: 55px;
+    padding-left: 5px;
+    color: #080854;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.euro-grp h2{
+    display: flex;
+    justify-content: left;
+    color: #fff;
+    position: relative;
+    top: 5%;
+    left: 25%;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.euro input::placeholder{
+    color: #080854;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.curr{
+    display: grid;
+   grid-template-columns: 50% 50%;
+   margin: 0 50px 0 50px;
+   position: relative;
+   justify-content: center;
+}
+
+.curr img{
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.exchange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     position: relative;
+    top: 2%;
+}
+
+.ex{
+    height: 46px;
+    width: 80px;
+    border: 2px solid #fa2f33;
+    text-decoration: none;
+    color: #fa2f33;
+    background-color: #080854;
+    font-size: 1.1rem;
+    border-radius: 55px;
+    transition: .7s;
+   padding-top: 6px;
+}
+
+
+.option-field select{
+   background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #2f2fa2;
+    font-family: 'Poppins', sans-serif;
+    width: 350px;
+    border-radius: 55px 0  0 55px;
+    height: 55px;
+    padding-left: 20px;
+}
+.euro input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #2f2fa2;
+    font-family: 'Poppins', sans-serif;
+    width: 350px;
+    border-radius: 55px 0  0 55px;
+    height: 55px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.option-field h2{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    left: 25%;
+}
+
+.option-field p{
+    display: flex;
+    justify-content: center;
+}
+
+.option-field input::placeholder{
+    color: #080854;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+#output-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    transition: 0.9s ease-in all;
+}
+
+#que{
+    margin-right: 20px;;
+}
